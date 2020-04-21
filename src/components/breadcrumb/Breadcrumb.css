@@ -1,0 +1,17 @@
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb ol li:not(:last-child)::after {
+  content: ">";
+  margin: 0 10px;
+  color: black;
+}
+
+.breadcrumb ol li:not(:only-child):last-child a {
+  color: black;
+  pointer-events: none;
+  font-weight: bold;
+}
